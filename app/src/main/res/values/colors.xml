@@ -12,5 +12,7 @@
     <color name="deepPurple">#7C4DFF</color>
     <color name="blue">#0019fc</color>
     <color name="darkerGray">#bababa</color>
+    <color name="Gray">#787575</color>
+
 
 </resources>

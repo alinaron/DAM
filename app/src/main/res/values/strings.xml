@@ -7,11 +7,22 @@
     <string name="btn_profesor_text">Profesor</string>
     <string name="btn_login_text">Login</string>
     <string name="tv_add_quiz">Add quiz</string>
-    <string name="tv_add_quiz2">Teachers can add quizes here.</string>
+    <string name="tv_add_quiz2">Start a new quiz session.</string>
     <string name="tv_join_session">Join</string>
     <string name="join_quiz_session">Join quiz session.</string>
     <string name="tv_user_statistics">Statistics</string>
     <string name="tv_user_statistics2">User\'s answers statistics.</string>
     <string name="tv_user_feedback">Feedback</string>
     <string name="tv_user_feedback2">See teachers\' feedback.</string>
+    <string name="tv_profile_user">Profile</string>
+    <string name="tv_profile_user2">Check your profile.</string>
+    <string name="tv_profile_teacher">Profile</string>
+    <string name="tv_profile_teacher2">Check your profile.</string>
+    <string name="tv_add_student">Add student</string>
+    <string name="tv_add_student2">Add a student.</string>
+    <string name="tv_teacher_feedback2">Send your feedback to a group of students.</string>
+    <string name="tv_teacher_more">More</string>
+    <string name="tv_teacher_more2">More options.</string>
+    <string name="tv_student_gradebook">Gradebook</string>
+    <string name="tv_student_gradebook2">Check your gradebook.</string>
 </resources>

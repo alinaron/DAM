@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class StartPageActivity extends AppCompatActivity {
     private Button btnStudent;
+    private Button btnTeacher;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,8 @@ public class StartPageActivity extends AppCompatActivity {
     private void initComponents(){
         btnStudent = findViewById(R.id.btn_student);
         btnStudent.setOnClickListener(startLogin());
+        btnTeacher = findViewById(R.id.btn_profesor);
+        btnTeacher.setOnClickListener(startTeacherHome());
     }
     private View.OnClickListener startLogin(){
         return new View.OnClickListener() {
@@ -24,6 +27,15 @@ public class StartPageActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
+            }
+        };
+    }
+    private View.OnClickListener startTeacherHome(){
+        return new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), TeacherHomeActivity.class);
+                startActivity(i);
             }
         };
     }
