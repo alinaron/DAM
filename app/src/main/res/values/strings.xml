@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Q&amp;A</string>
+    <string name="et_hint_username">Username</string>
+    <string name="et_hint_password">Password</string>
+    <string name="tv_forgot_password">Forgot password?</string>
+    <string name="btn_student_text">Student</string>
+    <string name="btn_profesor_text">Profesor</string>
+    <string name="btn_login_text">Login</string>
+    <string name="tv_add_quiz">Add quiz</string>
+    <string name="tv_add_quiz2">Teachers can add quizes here.</string>
+    <string name="tv_join_session">Join</string>
+    <string name="join_quiz_session">Join quiz session.</string>
+    <string name="tv_user_statistics">Statistics</string>
+    <string name="tv_user_statistics2">User\'s answers statistics.</string>
+    <string name="tv_user_feedback">Feedback</string>
+    <string name="tv_user_feedback2">See teachers\' feedback.</string>
+</resources>
