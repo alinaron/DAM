@@ -25,4 +25,8 @@
     <string name="tv_teacher_more2">More options.</string>
     <string name="tv_student_gradebook">Gradebook</string>
     <string name="tv_student_gradebook2">Check your gradebook.</string>
+    <string name="change_pass_btn_save_text">Save new password</string>
+    <string name="change_pass_et_confirm_password_hint">Confirm New Password</string>
+    <string name="change_pass_et_new_pass_hint">New Password</string>
+    <string name="change_pass_tv_title_text">Change Password</string>
 </resources>
