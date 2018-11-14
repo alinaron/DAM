@@ -19,6 +19,7 @@
         <android.support.v7.widget.CardView
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
+            android:id="@+id/student_home_profile_cardView"
             android:layout_width="match_parent"
             android:layout_height="190dp"
             android:layout_margin="10dp">
