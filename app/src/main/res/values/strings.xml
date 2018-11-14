@@ -29,4 +29,16 @@
     <string name="change_pass_et_confirm_password_hint">Confirm New Password</string>
     <string name="change_pass_et_new_pass_hint">New Password</string>
     <string name="change_pass_tv_title_text">Change Password</string>
+    <string name="student_settings_change_pass_schimbare_parola_text">Parola a fost schimbata cu succes!</string>
+    <string name="student_settings_change_pass_eroare_schimbare_parola_text">Parolele introduse nu coincid! Reintroduceti noua parola!</string>
+    <string name="student_profile_image_settings">Settings</string>
+    <string name="student_profile_image_content_description">imagine student</string>
+    <string name="student_profile_tv_nume_hint">Nume+Prenume</string>
+    <string name="student_profile_tv_username_hint"> \@username</string>
+    <string name="student_profile_tv_bio_hint">Bio</string>
+    <string name="student_profile_tv_bio_original_text">Student \n Change the bio in settings</string>
+    <string name="student_profile_tv_grupa_txt">Grupa</string>
+    <string name="student_profile_tv_serie_txt">Serie</string>
+    <string name="student_profile_tv_an_txt">An</string>
+    <string name="student_profile_btn_back">Back to main page</string>
 </resources>
