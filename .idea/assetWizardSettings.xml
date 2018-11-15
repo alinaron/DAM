@@ -52,7 +52,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="103" />
+                                                <entry key="scalingPercent" value="69" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -65,7 +65,7 @@
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
                                       <entry key="foregroundImage" value="C:\Users\Alin\Desktop\stud.png" />
                                       <entry key="foregroundLayerName" value="icon_student" />
-                                      <entry key="outputName" value="ic_std" />
+                                      <entry key="outputName" value="ic_student" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -103,11 +103,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
