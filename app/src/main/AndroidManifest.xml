@@ -31,7 +31,11 @@
         <activity android:name=".TeacherProfileActivity" />
         <activity android:name=".TeacherProfileSettingsActivity" />
         <activity android:name=".StudentProfileSettingsActivity" />
-        <activity android:name=".StudentSettingsChangePasswordActivity"></activity>
+        <activity android:name=".StudentSettingsChangePasswordActivity" />
+        <activity android:name=".ChangeBioActivity" />
+        <activity android:name=".EditProfileActivity"></activity>
+
+
     </application>
 
 </manifest>
