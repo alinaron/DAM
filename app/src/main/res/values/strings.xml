@@ -41,4 +41,9 @@
     <string name="student_profile_tv_serie_txt">Serie</string>
     <string name="student_profile_tv_an_txt">An</string>
     <string name="student_profile_btn_back">Back to main page</string>
+    <string name="student_settings_tv_settings_text">Settings</string>
+    <string name="student_settings_cv_change_pas_text">Change Password</string>
+    <string name="student_settings_cv_tv_edit_profile_txt">Edit Profile</string>
+    <string name="student_settings_cv_tv_logout_txt">Log out</string>
+    <string name="student_settings_cv_tv_cancel_txt">Cancel</string>
 </resources>
