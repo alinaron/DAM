@@ -70,4 +70,8 @@
     <string name="about_tv_team_txt">Echipa: \n Alexe Andreea-Rebeca \n Andreescu Andreea-Cristina \n Antonescu Adrian-Gabriel \n Arhip Georgiana \n Aron Alin-Costin</string>
     <string name="about_tv_grupa_txt">Grupa 1065</string>
     <string name="about_tv_an_txt">Anul 2018</string>
+    <string name="change_bio_write_bio_txt">Write your bio</string>
+    <string name="change_bio_updated_bio_msg">Updated Bio</string>
+    <string name="edit_profile_updated_profile_msg">Profile has been updated</string>
+    <string name="edit_profile_enter_info_msg">Enter your info</string>
 </resources>
