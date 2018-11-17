@@ -33,13 +33,13 @@
     <string name="student_settings_change_pass_eroare_schimbare_parola_text">Parolele introduse nu coincid! Reintroduceti noua parola!</string>
     <string name="student_profile_image_settings">Settings</string>
     <string name="student_profile_image_content_description">imagine student</string>
-    <string name="student_profile_tv_nume_hint">Nume+Prenume</string>
+    <string name="student_profile_tv_nume_hint">First Name + Last Name</string>
     <string name="student_profile_tv_username_hint"> \@username</string>
     <string name="student_profile_tv_bio_hint">Bio</string>
     <string name="student_profile_tv_bio_original_text">Student \n Change the bio in settings</string>
-    <string name="student_profile_tv_grupa_txt">Grupa</string>
-    <string name="student_profile_tv_serie_txt">Serie</string>
-    <string name="student_profile_tv_an_txt">An</string>
+    <string name="student_profile_tv_grupa_txt">Group</string>
+    <string name="student_profile_tv_serie_txt">Series</string>
+    <string name="student_profile_tv_an_txt">Year</string>
     <string name="student_profile_btn_back">Back to main page</string>
     <string name="student_settings_tv_settings_text">Settings</string>
     <string name="student_settings_cv_change_pas_text">Change Password</string>
@@ -74,4 +74,5 @@
     <string name="change_bio_updated_bio_msg">Updated Bio</string>
     <string name="edit_profile_updated_profile_msg">Profile has been updated</string>
     <string name="edit_profile_enter_info_msg">Enter your info</string>
+    <string name="teacher_profile_settings_pic_updated_msg">Profile picture has been updated</string>
 </resources>

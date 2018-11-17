@@ -1,6 +1,7 @@
 package com.example.adrianantonescu.qa;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import org.w3c.dom.Text;
 
 public class TeacherProfileActivity extends AppCompatActivity {
 
-    ImageView ivSettings;
+    ImageView ivSettings, ivProfilePicture;
     TextView tvBio;
     Button btnBack;
     Intent intent;
@@ -29,6 +30,7 @@ public class TeacherProfileActivity extends AppCompatActivity {
         ivSettings.setOnClickListener(openSettings());
         btnBack=findViewById(R.id.teacher_profile_btn_back);
         tvBio=findViewById(R.id.teacher_profile_tv_bio);
+        ivProfilePicture=findViewById(R.id.teacher_profile_profile_photo);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,9 +39,20 @@ public class TeacherProfileActivity extends AppCompatActivity {
             }
         });
         intent=getIntent();
-        String newBio = intent.getStringExtra(constants.BIO_KEY);
-        if(newBio!=null)
-            tvBio.setText(newBio);
+        Bundle bundle=intent.getExtras();
+        if(bundle!=null)
+        {
+            String uri=bundle.getString(constants.IMAGE_URI_KEY);
+            if(uri!=null)
+                if(!uri.isEmpty()) {
+                    Uri stringToUri = Uri.parse(uri);
+                    ivProfilePicture.setImageURI(stringToUri);
+                }
+            String newBio = bundle.getString(constants.BIO_KEY);
+            if(newBio!=null)
+                tvBio.setText(newBio);
+        }
+
     }
     private View.OnClickListener openSettings()
     {

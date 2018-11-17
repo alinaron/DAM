@@ -1,6 +1,7 @@
 package com.example.adrianantonescu.qa;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class StudentProfileActivity extends AppCompatActivity {
-    ImageView imgSettings;
+    ImageView imgSettings, imgProfilePic;
     Button btnBack;
     TextView tvNumePrenume, tvBio;
     @Override
@@ -26,17 +27,27 @@ public class StudentProfileActivity extends AppCompatActivity {
         btnBack.setOnClickListener(backTo());
         tvNumePrenume=findViewById(R.id.student_profile_tv_nume);
         tvBio=findViewById(R.id.student_profile_tv_bio);
+        imgProfilePic=findViewById(R.id.student_profile_photo);
         Intent intent=getIntent();
-        String prenume,nume,bio;
-        prenume=intent.getStringExtra(constants.FIRST_NAME_KEY);
-        nume=intent.getStringExtra(constants.LAST_NAME_KEY);
-        bio=intent.getStringExtra(constants.BIO_KEY);
-        if(prenume!=null&&nume!=null)
-            if(!prenume.isEmpty()&&!nume.isEmpty())
-                tvNumePrenume.setText(String.format("%s %s", nume, prenume));
-        if(bio!=null)
-            if(!bio.isEmpty())
-                tvBio.setText(bio);
+        String prenume, nume, bio, imageUri;
+        Bundle bundle=intent.getExtras();
+        if(bundle!=null) {
+            imageUri = bundle.getString(constants.IMAGE_URI_KEY);
+            if (imageUri != null)
+                if (!imageUri.isEmpty()) {
+                    Uri stringToUri = Uri.parse(imageUri);
+                    imgProfilePic.setImageURI(stringToUri);
+                }
+            prenume = bundle.getString(constants.FIRST_NAME_KEY);
+            nume = bundle.getString(constants.LAST_NAME_KEY);
+            bio = bundle.getString(constants.BIO_KEY);
+            if (prenume != null && nume != null)
+                if (!prenume.isEmpty() && !nume.isEmpty())
+                    tvNumePrenume.setText(String.format("%s %s", nume, prenume));
+            if (bio != null)
+                if (!bio.isEmpty())
+                    tvBio.setText(bio);
+        }
     }
     private View.OnClickListener openSettings()
     {

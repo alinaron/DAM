@@ -1,6 +1,8 @@
 package com.example.adrianantonescu.qa;
 
 import android.content.Intent;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +13,7 @@ public class TeacherProfileSettingsActivity extends AppCompatActivity {
 
     TextView tvChangePicture, tvChangeBio, tvLogout, tvCancel;
     Intent intent;
+    Uri imageUri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +37,8 @@ public class TeacherProfileSettingsActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                intent=new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                startActivityForResult(intent,constants.PICK_IMG);
             }
         };
     }
@@ -67,4 +71,19 @@ public class TeacherProfileSettingsActivity extends AppCompatActivity {
             }
         };
      }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode==RESULT_OK&&requestCode==constants.PICK_IMG){
+            imageUri=data.getData();
+            if(imageUri!=null){
+                String uriToString=imageUri.toString();
+                intent = new Intent(getApplicationContext(), TeacherProfileActivity.class);
+                intent.putExtra(constants.IMAGE_URI_KEY, uriToString);
+                Toast.makeText(getApplicationContext(),getString(R.string.teacher_profile_settings_pic_updated_msg),Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        }
+    }
 }
