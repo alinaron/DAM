@@ -30,4 +30,5 @@
         android:backgroundTint="#b93f3f"
         android:text="@string/btn_student_text"
         android:textColor="#FFFFFF"/>
+
 </RelativeLayout>

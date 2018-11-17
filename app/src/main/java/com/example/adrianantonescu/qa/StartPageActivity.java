@@ -9,6 +9,7 @@ import android.widget.Button;
 public class StartPageActivity extends AppCompatActivity {
     private Button btnStudent;
     private Button btnTeacher;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,4 +40,6 @@ public class StartPageActivity extends AppCompatActivity {
             }
         };
     }
+
+
 }
