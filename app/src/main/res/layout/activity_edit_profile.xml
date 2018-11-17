@@ -41,18 +41,16 @@
 
     <TextView
         android:id="@+id/edit_profile_tv_username"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
         android:layout_marginTop="120dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:gravity="center"
         android:hint="@string/student_profile_tv_username_hint"
         android:textColor="@color/backgroundColor"
         android:textSize="24sp"
         app:fontFamily="@font/galada"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/edit_profile_profile_pic"
         app:layout_constraintTop_toBottomOf="@+id/edit_profile_title_edit_profile" />
 
@@ -79,9 +77,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="60dp"
         android:text="@string/edit_profile_tv_first_name_txt"
         android:textColor="@color/backgroundColor"
+        android:textSize="16sp"
         app:fontFamily="@font/lobster"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_profile_tv_change_picture" />
@@ -95,6 +94,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/edit_profile_tv_last_name_txt"
         android:textColor="@color/backgroundColor"
+        android:textSize="16sp"
         app:fontFamily="@font/lobster"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_profile_et_first_name" />
@@ -105,9 +105,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:text="@string/edit_profile_tv_bio_txt"
         android:textColor="@color/backgroundColor"
+        android:textSize="16sp"
         app:fontFamily="@font/lobster"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_profile_et_last_name" />

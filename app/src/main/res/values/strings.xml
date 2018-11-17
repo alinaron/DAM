@@ -75,4 +75,5 @@
     <string name="edit_profile_updated_profile_msg">Profile has been updated</string>
     <string name="edit_profile_enter_info_msg">Enter your info</string>
     <string name="teacher_profile_settings_pic_updated_msg">Profile picture has been updated</string>
+    <string name="activity_login_loginPhoto_content_desc">loginPhoto</string>
 </resources>

@@ -17,7 +17,9 @@
         android:layout_marginTop="70dp"
         android:layout_marginStart="147dp"
         android:layout_marginEnd="147dp"
-        app:srcCompat="@drawable/loginhead" />
+        app:srcCompat="@drawable/loginhead"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/activity_login_loginPhoto_content_desc" />
 
     <EditText
         android:gravity="center"
@@ -30,7 +32,10 @@
         android:background="@drawable/rounded_edittext"
         android:drawableRight="@drawable/ic_action_username"
         android:hint="@string/et_hint_username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:drawableEnd="@drawable/ic_action_username"
+        android:importantForAutofill="no"
+        tools:ignore="UnusedAttribute" />
 
     <EditText
         android:gravity="center"
@@ -43,7 +48,10 @@
         android:background="@drawable/rounded_edittext"
         android:drawableRight="@drawable/ic_action_password"
         android:hint="@string/et_hint_password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_action_password"
+        android:importantForAutofill="no"
+        tools:ignore="UnusedAttribute" />
 
     <!--<android.support.v7.widget.CardView-->
         <!--android:id="@+id/cv_login"-->
@@ -101,7 +109,8 @@
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
         android:text="@string/btn_login_text"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        tools:ignore="UnusedAttribute" />
 
 
 </RelativeLayout>
