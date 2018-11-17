@@ -33,13 +33,13 @@
         <activity android:name=".StudentProfileSettingsActivity" />
         <activity android:name=".StudentSettingsChangePasswordActivity" />
         <activity android:name=".ChangeBioActivity" />
-        <activity android:name=".EditProfileActivity"></activity>
+        <activity android:name=".EditProfileActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
