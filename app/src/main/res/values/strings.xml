@@ -101,5 +101,9 @@
     <string name="edit_profile_enter_info_msg">Enter your info</string>
     <string name="teacher_profile_settings_pic_updated_msg">Profile picture has been updated</string>
     <string name="activity_login_loginPhoto_content_desc">loginPhoto</string>
+    <string name="tv_more_options_text">More options</string>
+    <string name="btn_report_application_bug">Report application bug</string>
+    <string name="tv_describe_bug">Describe your bug here</string>
+    <string name="btn_submit_report">Submit</string>
 
 </resources>

@@ -27,20 +27,27 @@
         <activity
             android:name=".TeacherHomeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".StudentProfileActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".TeacherProfileActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".TeacherProfileSettingsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StudentProfileSettingsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StudentSettingsChangePasswordActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ChangeBioActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditProfileActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".StudentProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentSettingsChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeBioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -52,7 +59,9 @@
         <activity android:name=".StatisticsActivity" />
         <activity android:name=".GradebookActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".LoginProfesorActivity"></activity>
+        <activity android:name=".LoginProfesorActivity" />
+        <activity android:name=".MoreOptionsActivity" />
+        <activity android:name=".ReportBugActivity"></activity>
     </application>
 
 </manifest>
