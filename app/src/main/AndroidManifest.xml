@@ -43,8 +43,9 @@
         <activity android:name=".WriteFeedback" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".StatisticsActivity" />
-        <activity android:name=".GradebookActivity"></activity>
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".GradebookActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".LoginProfesorActivity"></activity>
     </application>
 
 </manifest>

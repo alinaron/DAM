@@ -35,7 +35,7 @@
         android:backgroundTint="#b93f3f"
         android:text="@string/trimite_feedback"
         android:textColor="#FFFF"
-        android:textSize="22sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -110,7 +110,9 @@
         android:hint="@string/mesajul_tau"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/write_feedback_et_name" />
+        app:layout_constraintTop_toBottomOf="@+id/write_feedback_et_name"
+        android:textAlignment="viewStart"
+        android:gravity="start"/>
 
     <ImageView
         android:id="@+id/write_feedback_img_star1"

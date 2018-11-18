@@ -127,7 +127,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:background="@drawable/rounded_edittext"
-        android:gravity="center"
+        android:gravity="start"
         android:textColor="@color/cardview_dark_background"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,7 +146,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:background="@drawable/rounded_edittext"
-        android:gravity="center"
+        android:gravity="start"
         android:hint="@string/edit_profile_tv_last_name_txt"
         android:inputType="textPersonName"
         android:textColor="@color/cardview_dark_background"
@@ -167,7 +167,7 @@
         android:layout_marginRight="8dp"
         android:background="@drawable/rounded_edittext"
         android:ems="10"
-        android:gravity="center"
+        android:gravity="start"
         android:hint="@string/edit_profile_tv_bio_txt"
         android:inputType="textMultiLine"
         android:maxLines="4"
@@ -196,7 +196,8 @@
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
         android:textColor="#FFFFFF"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute"
+        android:textSize="14sp"/>
 
 
 </android.support.constraint.ConstraintLayout>

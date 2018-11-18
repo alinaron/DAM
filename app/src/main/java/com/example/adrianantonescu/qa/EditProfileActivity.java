@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import util.constants;
+
 public class EditProfileActivity extends AppCompatActivity {
 
     EditText etNume, etPrenume, etBio;

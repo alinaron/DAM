@@ -108,11 +108,12 @@
         android:backgroundTint="#b93f3f"
         android:text="@string/sign_up"
         android:textColor="#FFFF"
-        android:textSize="22sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute"
+        />
 
     <EditText
         android:id="@+id/sign_up_et_password"
