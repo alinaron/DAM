@@ -27,6 +27,7 @@
         <activity
             android:name=".TeacherHomeActivity"
             android:screenOrientation="portrait" />
+<<<<<<< HEAD
 
         <activity android:name=".StudentProfileActivity"
             android:screenOrientation="portrait"/>
@@ -42,11 +43,35 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".EditProfileActivity"
             android:screenOrientation="portrait"></activity>
+=======
+        <activity
+            android:name=".StudentProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentSettingsChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeBioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+>>>>>>> adi
 
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
 
 
         <activity android:name=".SignUp"
@@ -71,6 +96,12 @@
         <activity android:name=".AddMultipleQuestionActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".AddOpenQuestionActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity android:name=".MoreOptionsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ReportBugActivity"
             android:screenOrientation="portrait"></activity>
 
     </application>
