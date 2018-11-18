@@ -10,6 +10,7 @@ public class TeacherHomeActivity extends AppCompatActivity {
     CardView cvProfile;
 
     CardView cvSignUp;
+    CardView cvMore;
     CardView cvFeedback;
 
 
@@ -32,8 +33,18 @@ public class TeacherHomeActivity extends AppCompatActivity {
         cvFeedback.setOnClickListener(startFeedback());
         cvAddQuiz=findViewById(R.id.teacher_home_add_quiz_cardView);
         cvAddQuiz.setOnClickListener(openQuestion());
+        cvMore = findViewById(R.id.cv_more_options);
+        cvMore.setOnClickListener(startMore());
     }
-
+    private View.OnClickListener startMore(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MoreOptionsActivity.class);
+                startActivity(i);
+            }
+        };
+    }
     private View.OnClickListener startFeedback() {
         return new View.OnClickListener() {
             @Override
