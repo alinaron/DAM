@@ -13,7 +13,8 @@ public class StartPageActivity extends AppCompatActivity {
     private Button btnStudent;
     private Button btnTeacher;
     private LinearLayout llAbout;
-    @Override
+
+  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_page);
@@ -56,4 +57,5 @@ public class StartPageActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(),getString(R.string.start_page_back_press_txt),Toast.LENGTH_LONG).show();
     }
+
 }

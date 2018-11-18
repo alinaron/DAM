@@ -65,4 +65,5 @@
             android:textSize="23sp"
             app:fontFamily="@font/didact_gothic" />
     </LinearLayout>
+>>>>>>> master
 </RelativeLayout>

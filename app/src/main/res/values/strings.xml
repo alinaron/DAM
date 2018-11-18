@@ -46,6 +46,32 @@
     <string name="student_settings_cv_tv_edit_profile_txt">Edit Profile</string>
     <string name="student_settings_cv_tv_logout_txt">Log out</string>
     <string name="student_settings_cv_tv_cancel_txt">Cancel</string>
+    <string name="numeSignUp">Name</string>
+    <string name="usernameSignUp">Username</string>
+    <string name="inregistrareSignUp">Register</string>
+    <string name="anSignUp">Year</string>
+    <string name="serieSignUp">Series</string>
+    <string name="grupaSignUp">Group</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="grupaSignUpHint">Group</string>
+    <string name="serieSignUpHint">Series</string>
+    <string name="anSignUpHint">Year</string>
+    <string name="usernameSignUpHint">Username</string>
+    <string name="nume_si_prenumeSignUp">Name</string>
+    <string name="parolaSignUpHint">Password</string>
+    <string name="parolaSignUp">Password</string>
+    <string name="numeFeedback">Name</string>
+    <string name="numeFeedbackHint">Name</string>
+    <string name="mesajul_tau">Your message</string>
+    <string name="trimite_feedback">Send</string>
+    <string name="email">Email</string>
+    <string name="reset_password">Reset password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="message">Message</string>
+    <string name="feedback">Feedback</string>
+    <string name="statistics">Statistics</string>
+    <string name="my_grades">My grades</string>
+
     <string name="activity_edit_profile_title_edit_profile">Edit Profile</string>
     <string name="edit_profile_cv_tv_change_profile_picture">Change profile picture</string>
     <string name="edit_profile_image_content_desc">student\'s profile picture</string>
@@ -76,4 +102,5 @@
     <string name="edit_profile_enter_info_msg">Enter your info</string>
     <string name="teacher_profile_settings_pic_updated_msg">Profile picture has been updated</string>
     <string name="activity_login_loginPhoto_content_desc">loginPhoto</string>
+
 </resources>
