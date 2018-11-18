@@ -9,6 +9,7 @@ import android.view.View;
 public class TeacherHomeActivity extends AppCompatActivity {
     CardView cvProfile;
     CardView cvSignUp;
+    CardView cvMore;
     CardView cvFeedback;
 
     @Override
@@ -25,8 +26,18 @@ public class TeacherHomeActivity extends AppCompatActivity {
         cvSignUp.setOnClickListener(startSignUp());
         cvFeedback = findViewById(R.id.teacher_home_feedback_cardView);
         cvFeedback.setOnClickListener(startFeedback());
+        cvMore = findViewById(R.id.cv_more_options);
+        cvMore.setOnClickListener(startMore());
     }
-
+    private View.OnClickListener startMore(){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MoreOptionsActivity.class);
+                startActivity(i);
+            }
+        };
+    }
     private View.OnClickListener startFeedback() {
         return new View.OnClickListener() {
             @Override
