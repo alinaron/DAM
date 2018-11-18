@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Toast;
 
 public class StudentProfileSettingsActivity extends AppCompatActivity {
 
@@ -56,7 +57,9 @@ public class StudentProfileSettingsActivity extends AppCompatActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                intent=new Intent(getApplicationContext(),StartPageActivity.class);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(),getString(R.string.student_profile_settings_logout_message),Toast.LENGTH_SHORT).show();
             }
         };
     }

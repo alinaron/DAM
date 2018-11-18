@@ -46,7 +46,13 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
+        <activity android:name=".SignUp" />
+        <activity android:name=".WriteFeedback" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".StatisticsActivity" />
+        <activity android:name=".GradebookActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".LoginProfesorActivity"></activity>
     </application>
 
 </manifest>
