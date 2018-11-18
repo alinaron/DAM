@@ -71,7 +71,6 @@
     <string name="feedback">Feedback</string>
     <string name="statistics">Statistics</string>
     <string name="my_grades">My grades</string>
-
     <string name="activity_edit_profile_title_edit_profile">Edit Profile</string>
     <string name="edit_profile_cv_tv_change_profile_picture">Change profile picture</string>
     <string name="edit_profile_image_content_desc">student\'s profile picture</string>

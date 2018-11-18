@@ -9,7 +9,7 @@
     android:layout_gravity="center">
 
     <EditText
-        android:id="@+id/etFeedback1"
+        android:id="@+id/write_feedback_et_name"
         android:layout_width="258dp"
         android:layout_height="32dp"
         android:layout_marginStart="90dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnFeedback"
+        android:id="@+id/write_feedback_btn_send"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvFeedback2"
+        android:id="@+id/write_feedback_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -50,11 +50,12 @@
         android:text="@string/numeFeedback"
         android:textColor="#FFFF"
         android:textSize="18sp"
+        app:fontFamily="@font/didact_gothic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvFeedback1"
+        android:id="@+id/write_feedbacktv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -64,13 +65,14 @@
         android:layout_marginRight="8dp"
         android:text="@string/feedback"
         android:textColor="#FFFF"
-        android:textSize="36sp"
+        android:textSize="35sp"
+        app:fontFamily="@font/galada"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RatingBar
-        android:id="@+id/rbFeedback"
+        android:id="@+id/write_feedback_rb_feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -78,13 +80,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnFeedback"
+        app:layout_constraintBottom_toTopOf="@+id/write_feedback_btn_send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvFeedback3"
+        android:id="@+id/write_feedback_tv_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -93,11 +94,12 @@
         android:text="@string/message"
         android:textColor="#FFFF"
         android:textSize="18sp"
+        app:fontFamily="@font/didact_gothic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFeedback2" />
+        app:layout_constraintTop_toBottomOf="@+id/write_feedback_tv_name" />
 
     <EditText
-        android:id="@+id/etFeedback2"
+        android:id="@+id/write_feedback_et_message"
         android:layout_width="260dp"
         android:layout_height="169dp"
         android:layout_marginStart="90dp"
@@ -108,11 +110,10 @@
         android:hint="@string/mesajul_tau"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etFeedback1"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/write_feedback_et_name" />
 
     <ImageView
-        android:id="@+id/imageFeedback1"
+        android:id="@+id/write_feedback_img_star1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -121,12 +122,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvFeedback1"
+        app:layout_constraintStart_toEndOf="@+id/write_feedbacktv_title"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ImageView
-        android:id="@+id/imageFeedback2"
+        android:id="@+id/write_feedback_img_star2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -134,7 +135,7 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/tvFeedback1"
+        app:layout_constraintEnd_toStartOf="@+id/write_feedbacktv_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star_big_on" />

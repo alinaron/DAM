@@ -9,72 +9,77 @@
     android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/sign_up_tv_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:text="@string/parolaSignUp"
         android:textColor="#FFFF"
         android:textSize="16sp"
+        app:fontFamily="@font/didact_gothic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_name" />
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/sign_up_tv_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:text="@string/usernameSignUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tv1"
+        android:textColor="#FFFF"
         android:textSize="16sp"
-        android:textColor="#FFFF"/>
+        app:fontFamily="@font/didact_gothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_password" />
 
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/sign_up_tv_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="43dp"
         android:text="@string/anSignUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:textColor="#FFFF"
         android:textSize="16sp"
-        android:textColor="#FFFF"/>
+        app:fontFamily="@font/didact_gothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_username" />
 
     <TextView
-        android:id="@+id/tv4"
+        android:id="@+id/sign_up_tv_series"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="37dp"
         android:text="@string/serieSignUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        android:textColor="#FFFF"
         android:textSize="16sp"
-        android:textColor="#FFFF"/>
+        app:fontFamily="@font/didact_gothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_year" />
 
     <TextView
-        android:id="@+id/tv5"
+        android:id="@+id/sign_up_tv_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="37dp"
         android:text="@string/grupaSignUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv4"
+        android:textColor="#FFFF"
         android:textSize="16sp"
-        android:textColor="#FFFF"/>
+        app:fontFamily="@font/didact_gothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_series" />
 
     <TextView
-        android:id="@+id/tv6"
+        android:id="@+id/sign_up_tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -83,15 +88,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="@string/inregistrareSignUp"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        app:fontFamily="@font/galada"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="30sp"
-        android:textColor="#FFFF"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/b1"
+        android:id="@+id/sign_up_btn_sign_up"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -99,17 +104,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="68dp"
+        android:background="@drawable/rounded_edittext"
+        android:backgroundTint="#b93f3f"
         android:text="@string/sign_up"
+        android:textColor="#FFFF"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="22sp"
-        android:background="@drawable/rounded_edittext"
-        android:backgroundTint="#b93f3f"
-        android:textColor="#FFFF"/>
+        tools:ignore="UnusedAttribute" />
 
     <EditText
-        android:id="@+id/et1"
+        android:id="@+id/sign_up_et_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -120,10 +126,10 @@
         android:hint="@string/parolaSignUpHint"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et7" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_name" />
 
     <EditText
-        android:id="@+id/et2"
+        android:id="@+id/sign_up_et_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -133,12 +139,12 @@
         android:inputType="textPersonName"
         android:hint="@string/usernameSignUpHint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et1"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_password"
         android:background="@drawable/rounded_edittext"
         />
 
     <EditText
-        android:id="@+id/et3"
+        android:id="@+id/sign_up_et_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -148,12 +154,12 @@
         android:inputType="textPersonName"
         android:hint="@string/anSignUpHint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et2"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_username"
         android:background="@drawable/rounded_edittext"
         />
 
     <EditText
-        android:id="@+id/et4"
+        android:id="@+id/sign_up_et_series"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -163,12 +169,12 @@
         android:inputType="textPersonName"
         android:hint="@string/serieSignUpHint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et3"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_year"
         android:background="@drawable/rounded_edittext"
         />
 
     <EditText
-        android:id="@+id/et5"
+        android:id="@+id/sign_up_et_group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -178,25 +184,26 @@
         android:inputType="textPersonName"
         android:hint="@string/grupaSignUpHint"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et4"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_series"
         android:background="@drawable/rounded_edittext"
         />
 
     <TextView
-        android:id="@+id/tv7"
+        android:id="@+id/sign_up_tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="105dp"
+        android:layout_marginTop="110dp"
         android:text="@string/numeSignUp"
         android:textColor="#FFFF"
         android:textSize="16sp"
+        app:fontFamily="@font/didact_gothic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et7"
+        android:id="@+id/sign_up_et_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
@@ -210,44 +217,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv8"
+        android:id="@+id/sign_up_tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="34dp"
         android:text="@string/email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv5"
+        android:textColor="#FFFF"
         android:textSize="16sp"
-        android:textColor="#FFFF"/>
+        app:fontFamily="@font/didact_gothic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_tv_group" />
 
     <EditText
-        android:id="@+id/et8"
+        android:id="@+id/sign_up_et_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="25dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et5"
         android:background="@drawable/rounded_edittext"
-        />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="96dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv7"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_et_group" />
 
 </android.support.constraint.ConstraintLayout>

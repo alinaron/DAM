@@ -9,7 +9,7 @@
     android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/tv1Statistics"
+        android:id="@+id/statistics_tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -19,7 +19,8 @@
         android:layout_marginRight="8dp"
         android:text="@string/statistics"
         android:textColor="#FFFF"
-        android:textSize="40sp"
+        android:textSize="30sp"
+        app:fontFamily="@font/galada"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
