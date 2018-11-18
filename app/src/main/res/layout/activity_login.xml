@@ -10,27 +10,32 @@
 
     <ImageView
         android:foregroundGravity="center"
-        android:id="@+id/imageView2"
+        android:id="@+id/start_page_image_login"
         android:layout_width="120dp"
         android:layout_height="150dp"
         android:layout_alignParentRight="true"
         android:layout_marginTop="70dp"
         android:layout_marginStart="147dp"
         android:layout_marginEnd="147dp"
-        app:srcCompat="@drawable/loginhead" />
+        app:srcCompat="@drawable/loginhead"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/activity_login_loginPhoto_content_desc" />
 
     <EditText
         android:gravity="center"
         android:id="@+id/et_username"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/start_page_image_login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="@drawable/rounded_edittext"
         android:drawableRight="@drawable/ic_action_username"
         android:hint="@string/et_hint_username"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:drawableEnd="@drawable/ic_action_username"
+        android:importantForAutofill="no"
+        tools:ignore="UnusedAttribute" />
 
     <EditText
         android:gravity="center"
@@ -43,7 +48,10 @@
         android:background="@drawable/rounded_edittext"
         android:drawableRight="@drawable/ic_action_password"
         android:hint="@string/et_hint_password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_action_password"
+        android:importantForAutofill="no"
+        tools:ignore="UnusedAttribute" />
 
     <!--<android.support.v7.widget.CardView-->
         <!--android:id="@+id/cv_login"-->
@@ -78,11 +86,13 @@
         android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="41dp"
         android:layout_marginRight="41dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="142dp"
         android:text="@string/tv_forgot_password"
         android:textColor="#FFFF"
@@ -93,14 +103,13 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_password"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:layout_marginBottom="211dp"
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
+        android:text="@string/btn_login_text"
         android:textColor="#FFFFFF"
-        android:text="@string/btn_login_text"/>
+        tools:ignore="UnusedAttribute" />
 
 
 </RelativeLayout>
