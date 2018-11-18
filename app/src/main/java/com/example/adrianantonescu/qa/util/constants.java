@@ -1,4 +1,4 @@
-package util;
+package com.example.adrianantonescu.qa.util;
 
 public interface constants {
     String BIO_KEY="newBio";

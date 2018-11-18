@@ -14,20 +14,7 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        signUpButton = findViewById(R.id.sign_up_btn_sign_up);
-        signUpButton.setOnClickListener(homePageStudent());
     }
 
-    private View.OnClickListener homePageStudent() {
-        return new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),
-                        HomeActivity.class);
-                startActivity(intent);
-            }
-
-        };
-    }
 
 }

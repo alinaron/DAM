@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import util.constants;
+import com.example.adrianantonescu.qa.util.constants;
 
 
 public class ChangeBioActivity extends AppCompatActivity {

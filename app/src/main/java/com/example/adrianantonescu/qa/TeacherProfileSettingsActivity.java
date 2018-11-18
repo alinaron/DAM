@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import util.constants;
+import com.example.adrianantonescu.qa.util.constants;
 
 public class TeacherProfileSettingsActivity extends AppCompatActivity {
 
