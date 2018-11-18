@@ -27,6 +27,7 @@
         <activity
             android:name=".TeacherHomeActivity"
             android:screenOrientation="portrait" />
+
         <activity android:name=".StudentProfileActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".TeacherProfileActivity"
@@ -42,17 +43,36 @@
         <activity android:name=".EditProfileActivity"
             android:screenOrientation="portrait"></activity>
 
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".SignUp" />
-        <activity android:name=".WriteFeedback" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".StatisticsActivity" />
-        <activity android:name=".GradebookActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".LoginProfesorActivity"></activity>
+
+        <activity android:name=".SignUp"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WriteFeedback"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".StatisticsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GradebookActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginProfesorActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".AddQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddSimpleQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddMultipleQuestionActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddOpenQuestionActivity"
+            android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>

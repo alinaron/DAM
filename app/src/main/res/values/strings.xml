@@ -101,5 +101,51 @@
     <string name="edit_profile_enter_info_msg">Enter your info</string>
     <string name="teacher_profile_settings_pic_updated_msg">Profile picture has been updated</string>
     <string name="activity_login_loginPhoto_content_desc">loginPhoto</string>
+    <string name="add_question_tv_text">Add a question</string>
+    <string name="add_question_button_text">Select</string>
+
+    <string-array name="add_question_subjects">
+        <item>Algebra</item>
+        <item>Statistics</item>
+        <item>Economy</item>
+        <item>BCO</item>
+        <item>BTI</item>
+        <item>BPC</item>
+    </string-array>
+    <string-array name="add_question_categories">
+        <item>Simple answer question</item>
+        <item>Multiple answer question</item>
+        <item>Short open question</item>
+    </string-array>
+    <string name="title_activity_add_open_answer_question">AddOpenAnswerQuestionActivity</string>
+    <string name="add_simple_question_btn_save">Save</string>
+    <string name="add_simple_question_tv_header">Simple answer question</string>
+    <string name="add_simple_question_tv_question_text">Question Text</string>
+    <string name="add_simple_question_te_a_hint">a.</string>
+    <string name="add_simple_question_te_b_hint">b.</string>
+    <string name="add_simple_question_te_c_hint">c.</string>
+    <string name="add_simple_question_te_d_hint">d.</string>
+    <string name="add_simple_question_tv_options">Options</string>
+    <string name="add_simple_question_rb_text_a">a.</string>
+    <string name="add_simple_question_rb_text_b">b.</string>
+    <string name="add_simple_question_rb_text_c">c.</string>
+    <string name="add_simple_question_rb_d_text">d.</string>
+    <string name="add_multiple_question_tv_header">Add Multiple Question</string>
+    <string name="add_multiple_question_btn_save">Save</string>
+    <string name="add_multiple_question_tv_question_text">Question Text</string>
+    <string name="add_multiple_question_te_a_hint">a.</string>
+    <string name="add_multiple_question_te_b_hint">b.</string>
+    <string name="add_multiple_question_te_c_hint">c.</string>
+    <string name="add_multiple_question_te_d_hint">d.</string>
+    <string name="add_multiple_question_tv_options">Options</string>
+    <string name="add_multiple_question_rb_a_text">a.</string>
+    <string name="add_multiple_question_rb_b_text">b.</string>
+    <string name="add_multiple_question_rb_c_text">c.</string>
+    <string name="add_multiple_question_rb_d_text">d.</string>
+    <string name="add_open_question_tv_banner_text">Add open question</string>
+    <string name="add_open_question_tv_question_text">Question text</string>
+    <string name="add_open_question_tid_question_text_hint">Question text</string>
+    <string name="add_open_question_tid_question_answer_hint">Answer</string>
+    <string name="add_open_question_button_text">Save</string>
 
 </resources>

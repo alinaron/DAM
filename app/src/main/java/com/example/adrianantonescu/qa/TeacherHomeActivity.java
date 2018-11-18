@@ -8,8 +8,12 @@ import android.view.View;
 
 public class TeacherHomeActivity extends AppCompatActivity {
     CardView cvProfile;
+
     CardView cvSignUp;
     CardView cvFeedback;
+
+
+    CardView cvAddQuiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +25,13 @@ public class TeacherHomeActivity extends AppCompatActivity {
     {
         cvProfile=findViewById(R.id.teacher_home_profile_cardView);
         cvProfile.setOnClickListener(openProfile());
+
         cvSignUp=findViewById(R.id.teacher_home_signUp_cardView);
         cvSignUp.setOnClickListener(startSignUp());
         cvFeedback = findViewById(R.id.teacher_home_feedback_cardView);
         cvFeedback.setOnClickListener(startFeedback());
+        cvAddQuiz=findViewById(R.id.teacher_home_add_quiz_cardView);
+        cvAddQuiz.setOnClickListener(openQuestion());
     }
 
     private View.OnClickListener startFeedback() {
@@ -36,6 +43,17 @@ public class TeacherHomeActivity extends AppCompatActivity {
             }
         };
     }
+
+    private View.OnClickListener openQuestion() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),AddQuestionActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
 
     private View.OnClickListener openProfile(){
         return new View.OnClickListener() {
