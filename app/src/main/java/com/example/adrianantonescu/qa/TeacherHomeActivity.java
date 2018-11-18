@@ -8,6 +8,7 @@ import android.view.View;
 
 public class TeacherHomeActivity extends AppCompatActivity {
     CardView cvProfile;
+    CardView cvAddQuiz;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +19,20 @@ public class TeacherHomeActivity extends AppCompatActivity {
     {
         cvProfile=findViewById(R.id.teacher_home_profile_cardView);
         cvProfile.setOnClickListener(openProfile());
+        cvAddQuiz=findViewById(R.id.teacher_home_add_quiz_cardView);
+        cvAddQuiz.setOnClickListener(openQuestion());
     }
+
+    private View.OnClickListener openQuestion() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),AddQuestionActivity.class);
+                startActivity(intent);
+            }
+        };
+    }
+
     private View.OnClickListener openProfile(){
         return new View.OnClickListener() {
             @Override

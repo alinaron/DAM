@@ -65,6 +65,7 @@
         android:orientation="horizontal"
         android:weightSum="1">
         <android.support.v7.widget.CardView
+            android:id="@+id/teacher_home_add_quiz_cardView"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
