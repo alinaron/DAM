@@ -8,9 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
+import com.example.adrianantonescu.qa.util.constants;
 
 public class TeacherProfileActivity extends AppCompatActivity {
 

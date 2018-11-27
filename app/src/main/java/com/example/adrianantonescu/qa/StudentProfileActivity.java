@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.adrianantonescu.qa.util.constants;
+
 public class StudentProfileActivity extends AppCompatActivity {
     ImageView imgSettings, imgProfilePic;
     Button btnBack;

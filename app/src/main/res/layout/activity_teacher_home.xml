@@ -66,6 +66,7 @@
         android:orientation="horizontal"
         android:weightSum="1">
         <android.support.v7.widget.CardView
+            android:id="@+id/teacher_home_add_quiz_cardView"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
@@ -107,6 +108,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
+            android:id="@+id/teacher_home_signUp_cardView"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
@@ -161,6 +163,7 @@
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:layout_margin="10dp"
+            android:id="@+id/teacher_home_feedback_cardView"
             android:clickable="true"
             android:layout_weight="0.5"
             android:foreground="?android:attr/selectableItemBackground"
@@ -209,6 +212,7 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/cv_more_options"
             android:layout_weight="0.5"
             android:focusable="true">
 

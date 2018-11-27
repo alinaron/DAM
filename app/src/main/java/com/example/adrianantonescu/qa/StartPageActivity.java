@@ -13,7 +13,8 @@ public class StartPageActivity extends AppCompatActivity {
     private Button btnStudent;
     private Button btnTeacher;
     private LinearLayout llAbout;
-    @Override
+
+  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_page);
@@ -23,7 +24,7 @@ public class StartPageActivity extends AppCompatActivity {
         btnStudent = findViewById(R.id.btn_student);
         btnStudent.setOnClickListener(startLogin());
         btnTeacher = findViewById(R.id.btn_profesor);
-        btnTeacher.setOnClickListener(startTeacherHome());
+        btnTeacher.setOnClickListener(startTeacherLogin());
         llAbout=findViewById(R.id.start_page_about);
         llAbout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,11 +43,11 @@ public class StartPageActivity extends AppCompatActivity {
             }
         };
     }
-    private View.OnClickListener startTeacherHome(){
+    private View.OnClickListener startTeacherLogin(){
         return new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), TeacherHomeActivity.class);
+                Intent i = new Intent(getApplicationContext(), LoginProfesorActivity.class);
                 startActivity(i);
             }
         };
@@ -56,4 +57,5 @@ public class StartPageActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(),getString(R.string.start_page_back_press_txt),Toast.LENGTH_LONG).show();
     }
+
 }

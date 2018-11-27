@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.adrianantonescu.qa.util.constants;
+
 public class TeacherProfileSettingsActivity extends AppCompatActivity {
 
     TextView tvChangePicture, tvChangeBio, tvLogout, tvCancel;

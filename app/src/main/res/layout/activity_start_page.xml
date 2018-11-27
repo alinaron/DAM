@@ -19,9 +19,11 @@
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
         android:textColor="#FFFFFF"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute"
+        android:textSize="14sp"/>
 
     <Button
+        android:textSize="14sp"
         android:id="@+id/btn_student"
         android:layout_width="200dp"
         android:layout_height="50dp"
@@ -65,4 +67,5 @@
             android:textSize="23sp"
             app:fontFamily="@font/didact_gothic" />
     </LinearLayout>
+>>>>>>> master
 </RelativeLayout>
