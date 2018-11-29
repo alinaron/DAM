@@ -74,7 +74,7 @@
     <RatingBar
         android:id="@+id/write_feedback_rb_feedback"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -82,7 +82,12 @@
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/write_feedback_btn_send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:progressTint="@color/colorPrimary"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
 
     <TextView
         android:id="@+id/write_feedback_tv_message"
