@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/btn_cybernetics"
-        android:layout_width="253dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/btn_statistics"
-        android:layout_width="253dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -46,7 +46,7 @@
 
     <Button
         android:id="@+id/btn_informatics"
-        android:layout_width="253dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
