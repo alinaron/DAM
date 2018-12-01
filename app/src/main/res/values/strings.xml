@@ -155,6 +155,7 @@
     <string name="btn_submit_report">Submit</string>
     <string name="cybernetics">Cybernetics</string>
     <string name="informatics">Informatics</string>
+    <string name="view_statistics">View Statistics</string>
 
 
 </resources>
