@@ -7,8 +7,11 @@ public class student extends user {
     private String serie;
     private int an;
     private String specializare;
+    private String email;
 
-    public student(String username, String password, String nume, String prenume, String grupa, String serie, int an, String specializare) {
+
+    public student(String username, String password, String nume, String prenume, String grupa, String serie, int an, String specializare, String email) {
+
         super(username, password);
         this.nume = nume;
         this.prenume = prenume;
@@ -16,7 +19,23 @@ public class student extends user {
         this.serie = serie;
         this.an = an;
         this.specializare = specializare;
+        this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "student{" +
+                "nume='" + nume + '\'' +
+                ", prenume='" + prenume + '\'' +
+                ", grupa='" + grupa + '\'' +
+                ", serie='" + serie + '\'' +
+                ", an=" + an +
+                ", specializare='" + specializare + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
+
 
     public String getNume() {
         return nume;
@@ -66,15 +85,12 @@ public class student extends user {
         this.specializare = specializare;
     }
 
-    @Override
-    public String toString() {
-        return "student{" +
-                "nume='" + nume + '\'' +
-                ", prenume='" + prenume + '\'' +
-                ", grupa='" + grupa + '\'' +
-                ", serie='" + serie + '\'' +
-                ", an=" + an +
-                ", specializare='" + specializare + '\'' +
-                '}';
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
