@@ -20,7 +20,7 @@ public class AddOpenQuestionActivity extends AppCompatActivity {
     }
 
     private void initComponents(){
-        btnSave = findViewById(R.id.add_simple_question_button_save);
+        btnSave = findViewById(R.id.add_open_question_button_save);
         btnSave.setOnClickListener(saveEvent());
     }
 

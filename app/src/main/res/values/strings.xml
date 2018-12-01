@@ -153,6 +153,8 @@
     <string name="btn_report_application_bug">Report application bug</string>
     <string name="tv_describe_bug">Describe your bug here</string>
     <string name="btn_submit_report">Submit</string>
+    <string name="login_error_inset_username">Insert username here.</string>
+    <string name="login_error_insert_password">Insert password here.</string>
 
 
 </resources>
