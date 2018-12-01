@@ -157,6 +157,9 @@
     <string name="login_error_insert_password">Insert password here.</string>
     <string name="cybernetics">Cybernetics</string>
     <string name="informatics">Informatics</string>
+    <string name="view_statistics">View Statistics</string>
+    <string name="username_error">Insert username here.</string>
+    <string name="password_error">Insert password here.</string>
 
 
 </resources>
