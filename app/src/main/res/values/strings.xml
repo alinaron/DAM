@@ -155,6 +155,8 @@
     <string name="btn_submit_report">Submit</string>
     <string name="login_error_inset_username">Insert username here.</string>
     <string name="login_error_insert_password">Insert password here.</string>
+    <string name="cybernetics">Cybernetics</string>
+    <string name="informatics">Informatics</string>
 
 
 </resources>

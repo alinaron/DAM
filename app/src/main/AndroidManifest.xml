@@ -28,58 +28,72 @@
         <activity
             android:name=".TeacherHomeActivity"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".StudentProfileActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".TeacherProfileActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".TeacherProfileSettingsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StudentProfileSettingsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StudentSettingsChangePasswordActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ChangeBioActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".EditProfileActivity"
-            android:screenOrientation="portrait"/>
-
+        <activity
+            android:name=".StudentProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TeacherProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentProfileSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentSettingsChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeBioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
-
-        <activity android:name=".SignUp"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".WriteFeedback"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ForgotPasswordActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StatisticsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".GradebookActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AboutActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".LoginProfesorActivity"
-            android:screenOrientation="portrait"/>
-
-        <activity android:name=".AddQuestionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AddSimpleQuestionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AddMultipleQuestionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AddOpenQuestionActivity"
-            android:screenOrientation="portrait"/>
-
-
-        <activity android:name=".MoreOptionsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ReportBugActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GradebookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginProfesorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddSimpleQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddMultipleQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddOpenQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MoreOptionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportBugActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TeacherStatisticsActivity"/>
     </application>
 
 </manifest>
