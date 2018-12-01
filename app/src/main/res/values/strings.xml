@@ -153,6 +153,8 @@
     <string name="btn_report_application_bug">Report application bug</string>
     <string name="tv_describe_bug">Describe your bug here</string>
     <string name="btn_submit_report">Submit</string>
+    <string name="cybernetics">Cybernetics</string>
+    <string name="informatics">Informatics</string>
 
 
 </resources>
