@@ -62,9 +62,9 @@ public class LoginActivity extends AppCompatActivity{
                                 HomeActivity.class);
                         startActivity(intent);
                     }else if ((edtUsername.getText() == null) || (edtUsername.getText().toString().trim().isEmpty()) || (edtUsername.getText().toString() == null)) {
-                       edtUsername.setError("Insert username here.");
+                       edtUsername.setError(getString(R.string.username_error));
                     }else if ((edtPassword.getText() == null) || (edtPassword.getText().toString().trim().isEmpty()) ||(edtPassword.getText().toString() == null)) {
-                        edtPassword.setError("Insert password here.");
+                        edtPassword.setError(getString(R.string.password_error));
                     }
 
                 }

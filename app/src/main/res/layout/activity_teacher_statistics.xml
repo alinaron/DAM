@@ -10,26 +10,26 @@
 
     <Button
         android:id="@+id/btn_cybernetics"
-        android:layout_width="253dp"
-        android:layout_height="72dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
         android:text="@string/cybernetics"
         android:textColor="#FFFF"
-        android:textSize="30sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_statistics"
-        android:layout_width="253dp"
-        android:layout_height="72dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="70dp"
@@ -39,15 +39,15 @@
         android:backgroundTint="#b93f3f"
         android:text="@string/statistics"
         android:textColor="#FFFF"
-        android:textSize="30sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_cybernetics" />
 
     <Button
         android:id="@+id/btn_informatics"
-        android:layout_width="253dp"
-        android:layout_height="72dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="70dp"
@@ -60,5 +60,5 @@
         android:background="@drawable/rounded_edittext"
         android:backgroundTint="#b93f3f"
         android:textColor="#FFFF"
-        android:textSize="30sp"/>
+        android:textSize="16sp"/>
 </android.support.constraint.ConstraintLayout>

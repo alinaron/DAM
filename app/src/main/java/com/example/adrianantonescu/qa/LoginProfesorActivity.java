@@ -48,9 +48,9 @@ public class LoginProfesorActivity extends AppCompatActivity {
                     Intent i = new Intent(getApplicationContext(), TeacherHomeActivity.class);
                     startActivity(i);
                 }else if ((edtUsername.getText() == null) || (edtUsername.getText().toString().trim().isEmpty()) || (edtUsername.getText().toString() == null)) {
-                    edtUsername.setError("Insert username here.");
+                    edtUsername.setError(getString(R.string.username_error));
                 }else if ((edtPassword.getText() == null) || (edtPassword.getText().toString().trim().isEmpty()) ||(edtPassword.getText().toString() == null)) {
-                    edtPassword.setError("Insert password here.");
+                    edtPassword.setError(getString(R.string.password_error));
                 }
             }
         };
