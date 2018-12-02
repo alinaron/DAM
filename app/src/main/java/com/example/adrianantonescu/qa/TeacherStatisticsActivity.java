@@ -40,7 +40,6 @@ public class TeacherStatisticsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_statistics);
-
         @SuppressLint("StaticFieldLeak") ManagerHttp managerHttp=new ManagerHttp(){
             @Override
             protected void onPostExecute(String s) {

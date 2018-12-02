@@ -46,7 +46,7 @@
     <string name="student_settings_cv_tv_edit_profile_txt">Edit Profile</string>
     <string name="student_settings_cv_tv_logout_txt">Log out</string>
     <string name="student_settings_cv_tv_cancel_txt">Cancel</string>
-    <string name="numeSignUp">Last name</string>
+    <string name="numeSignUp">Name</string>
     <string name="usernameSignUp">Username</string>
     <string name="inregistrareSignUp">Register</string>
     <string name="anSignUp">Year</string>
@@ -57,7 +57,7 @@
     <string name="serieSignUpHint">Series</string>
     <string name="anSignUpHint">Year</string>
     <string name="usernameSignUpHint">Username</string>
-    <string name="nume_si_prenumeSignUp">First name</string>
+    <string name="nume_si_prenumeSignUp">Name</string>
     <string name="parolaSignUpHint">Password</string>
     <string name="parolaSignUp">Password</string>
     <string name="numeFeedback">Name</string>
@@ -153,19 +153,6 @@
     <string name="btn_report_application_bug">Report application bug</string>
     <string name="tv_describe_bug">Describe your bug here</string>
     <string name="btn_submit_report">Submit</string>
-    <string name="first_name">First name</string>
-    <string name="last_name">Last name</string>
-    <string name="specialization">Specialization</string>
-    <string name="et_firstname">Enter first name!</string>
-    <string name="et_lastname">Enter last name!</string>
-    <string name="et_username">Enter username!</string>
-    <string name="et_password">Enter password!</string>
-    <string name="toast_register">Student registered successfully!</string>
-    <string name="feedback_sent">Message sent successfully!</string>
-    <string name="feedback_name">Enter your name!</string>
-    <string name="feedback_message">Enter your message!</string>
-    <string name="statistics_ratecompleted">Rate of students having completed the test</string>
-    <string name="back_to_home">Back to home</string>
     <string name="login_error_inset_username">Insert username here.</string>
     <string name="login_error_insert_password">Insert password here.</string>
     <string name="cybernetics">Cybernetics</string>
