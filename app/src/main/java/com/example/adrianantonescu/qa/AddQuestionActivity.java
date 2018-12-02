@@ -24,7 +24,7 @@ public class AddQuestionActivity extends AppCompatActivity {
         initComponents();
     }
 
-    private void initComponents() {
+    protected void initComponents() {
         spnCategories = findViewById(R.id.add_question_spinner);
         btnSelect = findViewById(R.id.add_question_button);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.add_question_categories, R.layout.question_spinner_row);

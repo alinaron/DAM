@@ -26,7 +26,7 @@ public class AddOpenQuestionActivity extends AddQuestionAbstractActivity {
     }
 
 
-    private void initComponents(){
+    protected void initComponents(){
 
         btnSave = findViewById(R.id.add_open_question_button_save);
         btnSave.setOnClickListener(saveEvent());
