@@ -24,7 +24,7 @@ public class AddQuestionActivity extends AppCompatActivity {
         initComponents();
     }
 
-    private void initComponents() {
+    protected void initComponents() {
         spnCategories = findViewById(R.id.add_question_spinner);
         btnSelect = findViewById(R.id.add_question_button);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.add_question_categories, R.layout.question_spinner_row);
@@ -46,15 +46,17 @@ public class AddQuestionActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-//                else if(category == 1){
-//                    intent = new Intent(getApplicationContext(),
-//                            AddMultipleQuestionActivity.class);
-//                }
-//                else {
-//                    intent = new Intent(getApplicationContext(),
-//                            AddOpenQuestionActivity.class);
-//                }
+                else if(category == 1){
 
+                   intent = new Intent(getApplicationContext(),
+                            AddMultipleQuestionActivity.class);
+                    startActivity(intent);
+               }
+                else {
+                    intent = new Intent(getApplicationContext(),
+                            AddOpenQuestionActivity.class);
+                    startActivity(intent);
+                }
             }
         };
     }

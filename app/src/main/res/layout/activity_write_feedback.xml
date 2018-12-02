@@ -86,7 +86,6 @@
         android:progressTint="@color/materialYellow"
         android:secondaryProgressTint="@android:color/transparent"
         android:backgroundTint="@color/materialYellow"
-
         />
 
 

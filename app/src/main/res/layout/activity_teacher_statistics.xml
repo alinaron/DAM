@@ -61,4 +61,22 @@
         android:backgroundTint="#b93f3f"
         android:textColor="#FFFF"
         android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/teacher_statistics_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/statistics"
+        android:textColor="@color/backgroundColor"
+        android:textSize="30sp"
+        app:fontFamily="@font/galada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
