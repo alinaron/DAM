@@ -11,6 +11,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import com.example.adrianantonescu.qa.util.MultipleQuestion;
+import com.example.adrianantonescu.qa.util.Question;
+
 public class AddMultipleQuestionActivity extends AddQuestionAbstractActivity {
 
     Intent intent;
@@ -34,9 +37,7 @@ public class AddMultipleQuestionActivity extends AddQuestionAbstractActivity {
         intent = getIntent();
     }
 
-
     protected void initComponents(){
-
         btnSave = findViewById(R.id.add_multiple_question_button_save);
         btnSave.setOnClickListener(saveEvent());
         tidQuestionText = findViewById(R.id.add_multiple_question_te_question);
@@ -52,19 +53,19 @@ public class AddMultipleQuestionActivity extends AddQuestionAbstractActivity {
 
     @Override
     protected boolean isValid() {
-        if(tidQuestionText.getText() == null ||
+        if (tidQuestionText.getText() == null ||
                 tidQuestionText.getText().toString().trim().isEmpty() ||
                 tidQuestionText.getText().toString() == null) {
             tidQuestionText.setError(getString(R.string.add_simple_question_error1));
             return false;
         }
-        if(tidQuestionVarA.getText() == null ||
+        if (tidQuestionVarA.getText() == null ||
                 tidQuestionVarA.getText().toString().trim().isEmpty() ||
                 tidQuestionVarA.getText().toString() == null) {
             tidQuestionVarA.setError(getString(R.string.add_simple_question_error2));
             return false;
         }
-        if(tidQuestionVarB.getText() == null ||
+        if (tidQuestionVarB.getText() == null ||
                 tidQuestionVarB.getText().toString().trim().isEmpty() ||
                 tidQuestionVarB.getText().toString() == null) {
             tidQuestionVarB.setError(getString(R.string.add_simple_question_error2));
@@ -93,9 +94,33 @@ public class AddMultipleQuestionActivity extends AddQuestionAbstractActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isValid())
-                    //T0D0
-                    finish();
+                    Question q;
+                    if (isValid()) {
+                        String subject = "BPC";
+                        String questionText = tidQuestionText.getText().toString().trim();
+                        String varA = tidQuestionVarA.getText().toString().trim();
+                        String varB = tidQuestionVarB.getText().toString().trim();
+                        String varC = tidQuestionVarC.getText().toString().trim();
+                        String varD = tidQuestionVarD.getText().toString().trim();
+                        boolean varCorectaA = false;
+                        boolean varCorectaB = false;
+                        boolean varCorectaC = false;
+                        boolean varCorectaD = false;
+                        if (rbVarA.isChecked())
+                            varCorectaA = true;
+                        if (rbVarB.isChecked())
+                            varCorectaB = true;
+                        if (rbVarC.isChecked())
+                            varCorectaC = true;
+                        if (rbVarD.isChecked())
+                            varCorectaD = true;
+
+                        q = questionFactory.createQuestion("multiple",
+                                subject, questionText, varA, varB, varC, varD, "a");
+                        //unsafe but sry
+                        AddQuestionActivity.questions.add(q);
+                        finish();
+                    }
             }
         };
     }

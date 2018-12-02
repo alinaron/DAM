@@ -11,6 +11,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 
+import com.example.adrianantonescu.qa.util.Question;
+import com.example.adrianantonescu.qa.util.SimpleQuestion;
+
 import org.w3c.dom.Text;
 
 public class AddSimpleQuestionActivity extends AddQuestionAbstractActivity {
@@ -95,8 +98,31 @@ public class AddSimpleQuestionActivity extends AddQuestionAbstractActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isValid())
+                Question q;
+                if(isValid()){
+                    String subject = "BPC";
+                    String questionText = tidQuestionText.getText().toString().trim();
+                    String varA = tidQuestionVarA.getText().toString().trim();
+                    String varB = tidQuestionVarB.getText().toString().trim();
+                    String varC = tidQuestionVarC.getText().toString().trim();
+                    String varD = tidQuestionVarD.getText().toString().trim();
+                    String varCorecta = null;
+                    if(rbVarA.isChecked())
+                        varCorecta = "a";
+                    if(rbVarB.isChecked())
+                        varCorecta = "b";
+                    if(rbVarC.isChecked())
+                        varCorecta = "c";
+                    if(rbVarD.isChecked())
+                        varCorecta = "d";
+
+                    q = questionFactory.createQuestion("simple",
+                            subject, questionText, varA, varB, varC, varD, varCorecta);
+                    //unsafe but sry
+                    AddQuestionActivity.questions.add(q);
                     finish();
+                }
+
             }
         };
     }
