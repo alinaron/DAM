@@ -1,15 +1,21 @@
 package com.example.adrianantonescu.qa;
 
 import android.content.Intent;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Spinner;
 
-public class AddOpenQuestionActivity extends AppCompatActivity {
+public class AddOpenQuestionActivity extends AddQuestionAbstractActivity {
 
     Intent intent;
     Button btnSave;
+    TextInputEditText tidQuestionText;
+    Spinner spnSubject;
+    TextInputEditText tidQuestionAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,16 +25,36 @@ public class AddOpenQuestionActivity extends AppCompatActivity {
         intent = getIntent();
     }
 
-    private void initComponents(){
-        btnSave = findViewById(R.id.add_simple_question_button_save);
+    protected void initComponents(){
+        btnSave = findViewById(R.id.add_open_question_button_save);
         btnSave.setOnClickListener(saveEvent());
+        tidQuestionText = findViewById(R.id.add_open_question_tid_question_text);
+        tidQuestionAnswer = findViewById(R.id.add_open_question_tid_question_answer);
     }
 
-    private View.OnClickListener saveEvent() {
+    @Override
+    protected boolean isValid() {
+        if(tidQuestionText.getText() == null ||
+                tidQuestionText.getText().toString().trim().isEmpty() ||
+                tidQuestionText.getText().toString() == null) {
+            tidQuestionText.setError(getString(R.string.add_simple_question_error1));
+            return false;
+        }
+        if(tidQuestionAnswer.getText() == null ||
+                tidQuestionAnswer.getText().toString().trim().isEmpty() ||
+                tidQuestionAnswer.getText().toString() == null) {
+            tidQuestionAnswer.setError(getString(R.string.add_simple_question_error2));
+            return false;
+        }
+        return true;
+    }
+
+    protected View.OnClickListener saveEvent() {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                if(isValid())
+                    finish();
             }
         };
     }
