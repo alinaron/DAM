@@ -8,12 +8,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.example.adrianantonescu.qa.util.Question;
+
+import java.util.ArrayList;
+
 public class AddQuestionActivity extends AppCompatActivity {
 
     Intent intent;
 
     Spinner spnCategories;
     Button btnSelect;
+    public static ArrayList<Question> questions = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

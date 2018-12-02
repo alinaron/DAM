@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.example.adrianantonescu.qa.util.OpenQuestion;
+import com.example.adrianantonescu.qa.util.Question;
+
 public class AddOpenQuestionActivity extends AddQuestionAbstractActivity {
 
     Intent intent;
@@ -55,7 +58,15 @@ public class AddOpenQuestionActivity extends AddQuestionAbstractActivity {
         return new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(isValid())
+                if(isValid()) {
+                    Question q;
+                    String subject = "BPC";
+                    String questionText = tidQuestionText.getText().toString().trim();
+                    String questionAnswer = tidQuestionAnswer.getText().toString().trim();
+                    q = questionFactory.createQuestion("open", subject,
+                            questionText, questionAnswer);
+                    AddQuestionActivity.questions.add(q);
+                }
                     finish();
             }
         };
