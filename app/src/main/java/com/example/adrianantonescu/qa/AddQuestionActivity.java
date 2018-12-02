@@ -43,18 +43,20 @@ public class AddQuestionActivity extends AppCompatActivity {
                 if(category == 0) {
                     intent = new Intent(getApplicationContext(),
                             AddSimpleQuestionActivity.class);
+                    startActivity(intent);
                 }
 
                 else if(category == 1){
-                    intent = new Intent(getApplicationContext(),
+
+                   intent = new Intent(getApplicationContext(),
                             AddMultipleQuestionActivity.class);
-                }
+                    startActivity(intent);
+               }
                 else {
                     intent = new Intent(getApplicationContext(),
                             AddOpenQuestionActivity.class);
+                    startActivity(intent);
                 }
-                startActivity(intent);
-
             }
         };
     }

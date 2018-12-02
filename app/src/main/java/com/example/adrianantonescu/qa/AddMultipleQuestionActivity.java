@@ -34,7 +34,9 @@ public class AddMultipleQuestionActivity extends AddQuestionAbstractActivity {
         intent = getIntent();
     }
 
-    protected void initComponents(){
+
+    private void initComponents(){
+
         btnSave = findViewById(R.id.add_multiple_question_button_save);
         btnSave.setOnClickListener(saveEvent());
         tidQuestionText = findViewById(R.id.add_multiple_question_te_question);
