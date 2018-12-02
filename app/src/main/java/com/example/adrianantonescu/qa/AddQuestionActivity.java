@@ -47,6 +47,7 @@ public class AddQuestionActivity extends AppCompatActivity {
                 }
 
                 else if(category == 1){
+
                    intent = new Intent(getApplicationContext(),
                             AddMultipleQuestionActivity.class);
                     startActivity(intent);
@@ -56,7 +57,6 @@ public class AddQuestionActivity extends AppCompatActivity {
                             AddOpenQuestionActivity.class);
                     startActivity(intent);
                 }
-
             }
         };
     }
