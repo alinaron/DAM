@@ -68,6 +68,7 @@ public class TeacherStatisticsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 intent.putExtra(constants.INFO_EC_KEY, (Serializable) specializare.getInformaticaEconomica());
                 startActivity(intent);
+                finish();
             }
         };
     }
@@ -78,6 +79,7 @@ public class TeacherStatisticsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 intent.putExtra(constants.CIBE_KEY,specializare.getCiberneticaEconomica());
                 startActivity(intent);
+                finish();
             }
         };
     }
@@ -87,6 +89,7 @@ public class TeacherStatisticsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 intent.putExtra(constants.STAT_KEY,specializare.getStatistica());
                 startActivity(intent);
+                finish();
             }
         };
     }

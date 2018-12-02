@@ -7,15 +7,20 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.adrianantonescu.qa.network.Colectiv;
+import com.example.adrianantonescu.qa.network.Stud;
 import com.example.adrianantonescu.qa.util.CustomAdapter;
+import com.example.adrianantonescu.qa.util.StudAdapter;
 import com.example.adrianantonescu.qa.util.constants;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TeacherStatisticsMoreActivity extends AppCompatActivity {
 
     private ListView listView;
-    private List<Colectiv> list1=null,list2=null,list3=null;
+    private List<Colectiv> colInfo=null;
+    private Colectiv colCibe=null, colStat=null;
+    private List<Colectiv> list=new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,17 +31,23 @@ public class TeacherStatisticsMoreActivity extends AppCompatActivity {
         listView=findViewById(R.id.lvSpecializare);
         Intent intent=getIntent();
         if(intent!=null){
-            list1= (List<Colectiv>) intent.getSerializableExtra(constants.INFO_EC_KEY);
-            list2=(List<Colectiv>)intent.getSerializableExtra(constants.CIBE_KEY);
-            list3=(List<Colectiv>)intent.getSerializableExtra(constants.STAT_KEY);
+            colInfo= (List<Colectiv>) intent.getSerializableExtra(constants.INFO_EC_KEY);
+            colCibe= (Colectiv) intent.getSerializableExtra(constants.CIBE_KEY);
+            colStat= (Colectiv) intent.getSerializableExtra(constants.STAT_KEY);
         }
-        if(list1!=null)
-            Toast.makeText(getApplicationContext(),list1.toString(),Toast.LENGTH_LONG).show();
-        if(list2!=null)
-            Toast.makeText(getApplicationContext(),list2.toString(),Toast.LENGTH_LONG).show();
-        if(list3!=null)
-            Toast.makeText(getApplicationContext(),list3.toString(),Toast.LENGTH_LONG).show();
-        //CustomAdapter adapter=new CustomAdapter(getApplicationContext(),R.layout.lv_teacher_statistics,)
+
+        if(colInfo!=null) {
+            list.addAll(colInfo);
+        }
+        if(colCibe!=null) {
+            list.add(colCibe);
+        }
+        if(colStat!=null){
+            list.add(colStat);
+        }
+        //Toast.makeText(getApplicationContext(),list.toString(),Toast.LENGTH_LONG).show();
+        CustomAdapter adapter=new CustomAdapter(getApplicationContext(),R.layout.lv_teacher_statistics,list,getLayoutInflater());
+        listView.setAdapter(adapter);
     }
 
 }

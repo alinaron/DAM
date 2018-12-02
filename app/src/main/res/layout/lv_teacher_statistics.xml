@@ -11,16 +11,16 @@
         android:id="@+id/lv_linear_layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:weightSum="10"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/lv_linear_layout1">
 
         <TextView
 
             android:id="@+id/lv_stats_tv_subject"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
+            android:layout_weight="6.9"
             android:textColor="@color/backgroundColor"
             android:textSize="15sp"
             app:fontFamily="@font/didact_gothic" />
@@ -30,7 +30,7 @@
             android:id="@+id/lv_stats_tv_group"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2.5"
+            android:layout_weight="1.4"
             android:textColor="@color/backgroundColor"
             android:textSize="15sp"
             app:fontFamily="@font/didact_gothic" />
@@ -50,35 +50,101 @@
             android:id="@+id/lv_stats_tv_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
+            android:layout_weight="0.7"
             android:textColor="@color/backgroundColor"
             android:textSize="15sp"
+            app:fontFamily="@font/didact_gothic" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lv_linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.9"
+            android:text="@string/lv_teacher_statistics_subject_txt"
+            android:textColor="@color/backgroundColor"
+            android:textSize="13sp"
+            app:fontFamily="@font/didact_gothic" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            android:text="@string/lv_teacher_statistics_group_txt"
+            android:textColor="@color/backgroundColor"
+            android:textSize="13sp"
+            app:fontFamily="@font/didact_gothic" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lv_teacher_statistics_series_txt"
+            android:textColor="@color/backgroundColor"
+            android:textSize="13sp"
+            app:fontFamily="@font/didact_gothic" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="@string/v_teacher_statistics_year_txt"
+            android:textColor="@color/backgroundColor"
+            android:textSize="13sp"
             app:fontFamily="@font/didact_gothic" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lv_linear_layout3"
+        android:id="@+id/tv_linear_layout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:weightSum="10"
-        app:layout_constraintTop_toBottomOf="@id/lv_linear_layout2">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/lv_linear_layout2"
+        android:layout_marginTop="10dp"
+        android:weightSum="10">
+
         <TextView
-            android:id="@+id/lv_stats_tv_fullname"
+            android:id="@+id/lv_teacher_student_list"
             android:layout_width="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="8"
             android:textColor="@color/backgroundColor"
-            android:textSize="15sp"
-            app:fontFamily="@font/didact_gothic" />
-        <TextView
-
-            android:id="@+id/lv_stats_tv_result"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:textColor="@color/backgroundColor"
-            android:textSize="15sp"
+            android:textSize="13sp"
             app:fontFamily="@font/didact_gothic" />
     </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/lv_linear_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_linear_layout2">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lv_teacher_stats_student_list"
+            />
+    </LinearLayout>-->
 </android.support.constraint.ConstraintLayout>

@@ -33,8 +33,8 @@ public class StudAdapter extends ArrayAdapter<Stud> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View linie=layoutInflater.inflate(resource,parent,false);
         TextView tvFullName, tvResult;
-        tvFullName=linie.findViewById(R.id.lv_stats_tv_fullname);
-        tvResult=linie.findViewById(R.id.lv_stats_tv_result);
+        tvFullName=linie.findViewById(R.id.lv_studs_tv_fullName);
+        tvResult=linie.findViewById(R.id.lv_studs_tv_result);
         Stud stud=studs.get(position);
         tvFullName.setText(stud.getLname()+" "+stud.getFname());
         tvResult.setText(stud.getResult().toString());

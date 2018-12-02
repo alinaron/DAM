@@ -160,6 +160,10 @@
     <string name="view_statistics">View Statistics</string>
     <string name="username_error">Insert username here.</string>
     <string name="password_error">Insert password here.</string>
+    <string name="lv_teacher_statistics_subject_txt">Subject</string>
+    <string name="lv_teacher_statistics_group_txt">Group</string>
+    <string name="v_teacher_statistics_year_txt">Year</string>
+    <string name="lv_teacher_statistics_series_txt">Series</string>
 
 
 </resources>

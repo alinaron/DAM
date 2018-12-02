@@ -42,6 +42,6 @@ public class Stud implements Serializable {
 
     @Override
     public String toString() {
-        return this.lname+" "+this.fname+" - "+this.result.toString()+"\n";
+        return this.lname+" "+this.fname+"    -   "+this.result.toString()+"\n";
     }
 }
