@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.example.adrianantonescu.qa.util.OpenQuestion;
 import com.example.adrianantonescu.qa.util.Question;
 
 public class AddOpenQuestionActivity extends AddQuestionAbstractActivity {

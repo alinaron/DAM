@@ -44,6 +44,7 @@ public class TeacherStatisticsMoreActivity extends AppCompatActivity {
         }
         if(colStat!=null){
             list.add(colStat);
+
         }
         //Toast.makeText(getApplicationContext(),list.toString(),Toast.LENGTH_LONG).show();
         CustomAdapter adapter=new CustomAdapter(getApplicationContext(),R.layout.lv_teacher_statistics,list,getLayoutInflater());

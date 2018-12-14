@@ -169,6 +169,18 @@
     <string name="add_simple_question_error2">Please submit this answer!</string>
     <string name="add_simple_question_error3">Please choose an answer!</string>
 
-
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="specialization">Specialization</string>
+    <string name="et_firstname">Enter first name!</string>
+    <string name="et_lastname">Enter last name!</string>
+    <string name="et_username">Enter username!</string>
+    <string name="et_password">Enter password!</string>
+    <string name="toast_register">Student registered successfully!</string>
+    <string name="feedback_sent">Message sent successfully!</string>
+    <string name="feedback_name">Enter your name!</string>
+    <string name="feedback_message">Enter your message!</string>
+    <string name="statistics_ratecompleted">Rate of students having completed the test</string>
+    <string name="back_to_home">Back to home</string>
 
 </resources>

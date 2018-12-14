@@ -8,12 +8,12 @@ import com.example.adrianantonescu.qa.util.QuestionFactory;
 
 public abstract class AddQuestionAbstractActivity extends AppCompatActivity {
 
-    protected QuestionFactory questionFactory = QuestionFactory.getInstance();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+
+    protected QuestionFactory questionFactory = QuestionFactory.getInstance();
 
     protected abstract void initComponents();
 

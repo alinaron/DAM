@@ -1,16 +1,14 @@
 package com.example.adrianantonescu.qa.util;
 
-import android.content.Context;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class QuestionFactory  {
+public class QuestionFactory {
     private static QuestionFactory factory = new QuestionFactory();
     private static int lastId;
     Question question;
 
     public static QuestionFactory getInstance() {
+
         if(factory == null) {
             synchronized (QuestionFactory.class) {
                 if(factory == null) {
@@ -21,13 +19,14 @@ public class QuestionFactory  {
         return factory;
     }
 
+
     private QuestionFactory() {
         lastId = 0;
     }
 
     public Question createQuestion(String type, String ...args) {
         try {
-            if(type == "simple") {
+            if (type == "simple") {
                 int id = lastId;
                 String subject = args[0];
                 String questionText = args[1];
@@ -39,7 +38,6 @@ public class QuestionFactory  {
                 String varCorecta = args[6];
                 question = new SimpleQuestion(id, subject, questionText, var, varCorecta);
             } else if (type == "multiple") {
-
                 int id = lastId;
                 String subject = args[0];
                 String questionText = args[1];
@@ -49,12 +47,11 @@ public class QuestionFactory  {
                 var.add(args[4]);
                 var.add(args[5]);
                 ArrayList<String> varC = new ArrayList<>();
-                for(int i = 6; i < args.length; i++) {
+                for (int i = 6; i < args.length; i++) {
                     varC.add(args[i]);
                 }
                 question = new MultipleQuestion(id, subject, questionText, var, varC);
-            }
-            else {
+            } else {
                 int id = lastId;
                 String subject = args[0];
                 String questionText = args[1];
@@ -62,8 +59,7 @@ public class QuestionFactory  {
                 question = new OpenQuestion(id, subject, questionText, questionAnswer);
             }
             lastId++;
-        }
-        catch(NullPointerException ex) {
+        } catch (NullPointerException ex) {
             ex.printStackTrace();
         }
         return question;

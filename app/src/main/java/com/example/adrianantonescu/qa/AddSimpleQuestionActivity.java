@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import com.example.adrianantonescu.qa.util.Question;
-import com.example.adrianantonescu.qa.util.SimpleQuestion;
+import com.example.adrianantonescu.qa.util.QuestionFactory;
 
 import org.w3c.dom.Text;
 
@@ -99,7 +99,7 @@ public class AddSimpleQuestionActivity extends AddQuestionAbstractActivity {
             @Override
             public void onClick(View view) {
                 Question q;
-                if(isValid()){
+                if (isValid()) {
                     String subject = "BPC";
                     String questionText = tidQuestionText.getText().toString().trim();
                     String varA = tidQuestionVarA.getText().toString().trim();
@@ -107,22 +107,20 @@ public class AddSimpleQuestionActivity extends AddQuestionAbstractActivity {
                     String varC = tidQuestionVarC.getText().toString().trim();
                     String varD = tidQuestionVarD.getText().toString().trim();
                     String varCorecta = null;
-                    if(rbVarA.isChecked())
+                    if (rbVarA.isChecked())
                         varCorecta = "a";
-                    if(rbVarB.isChecked())
+                    if (rbVarB.isChecked())
                         varCorecta = "b";
-                    if(rbVarC.isChecked())
+                    if (rbVarC.isChecked())
                         varCorecta = "c";
-                    if(rbVarD.isChecked())
+                    if (rbVarD.isChecked())
                         varCorecta = "d";
-
                     q = questionFactory.createQuestion("simple",
                             subject, questionText, varA, varB, varC, varD, varCorecta);
                     //unsafe but sry
                     AddQuestionActivity.questions.add(q);
                     finish();
                 }
-
             }
         };
     }

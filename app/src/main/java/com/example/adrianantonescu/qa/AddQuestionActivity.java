@@ -35,6 +35,7 @@ public class AddQuestionActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.add_question_categories, R.layout.question_spinner_row);
         spnCategories.setAdapter(adapter);
         btnSelect.setOnClickListener(selectEvent());
+
     }
 
     private View.OnClickListener selectEvent() {
@@ -53,7 +54,7 @@ public class AddQuestionActivity extends AppCompatActivity {
 
                 else if(category == 1){
 
-                   intent = new Intent(getApplicationContext(),
+                    intent = new Intent(getApplicationContext(),
                             AddMultipleQuestionActivity.class);
                     startActivity(intent);
                }

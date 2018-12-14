@@ -83,9 +83,10 @@
         app:layout_constraintBottom_toTopOf="@+id/write_feedback_btn_send"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:progressTint="@color/colorPrimary"
+        android:progressTint="@color/materialYellow"
         android:secondaryProgressTint="@android:color/transparent"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/materialYellow"
+
         />
 
 
